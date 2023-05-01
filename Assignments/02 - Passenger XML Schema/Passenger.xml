@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Passenger xmlns:tns="http://www.bestflights.com/Passenger" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.bestflights.com/Passenger Passenger.xsd ">
+  <tns:name>Michael</tns:name>
+  <tns:dob>1984-10-12</tns:dob>
+  <tns:seatno>22</tns:seatno>
+  <tns:gender>M</tns:gender>
+</tns:Passenger>
