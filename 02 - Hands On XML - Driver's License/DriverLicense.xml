@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!-- comments in xml -->
+
+<DriverLicense status="active">
+	<!-- Child Elements -->
+	<Number>12345</Number>
+	<FirstName>Bob</FirstName>
+	<LastName>Johnson</LastName>
+	<DateOfBirth>18/may/1981</DateOfBirth>
+	<VehicleType>Car</VehicleType>
+	<DateOfIssue>11/June/2012</DateOfIssue>
+	<ExpiryDate>11/June/2015</ExpiryDate>
+	<Photo location="servername/filename"/>
+	<SpecialCharacters>&lt;&gt;&amp;&quot;&apos;</SpecialCharacters>
+	
+	<!-- CDATA Blocks -->
+	<![CDATA[
+		Used to provide data format examples:
+		<DateOfIssue>11/June/2012</DateOfIssue>
+	]]>
+	
+	<!-- Nested elements -->
+	<Address>
+		<Street>Elm</Street>
+		<City>Woodstove</City>
+		<State>NY</State>
+		<Zipcode>58796</Zipcode>
+		<Country>USA</Country>
+	</Address>
+</DriverLicense>
