@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:order xmlns:tns="http://www.supershop.com/Order" 
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+			xsi:schemaLocation="http://www.supershop.com/Order Order.xsd">
+    <tns:product>
+        <tns:name>Nike Air Force 1</tns:name>
+        <tns:description>Kick it in comfort in the Nike Air Force 1.</tns:description>
+        <tns:price>100</tns:price>
+        <tns:category>shoes</tns:category>
+    </tns:product>
+</tns:order>
