@@ -1,1 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.supershop.com/Order" 
+xmlns:tns="http://www.supershop.com/Order" 
+elementFormDefault="qualified">
+    <!-- root element -->
+    <element name="order" type="tns:order"/>
+
+    <!-- order element definition -->
+    <complexType name="order">
+        <sequence>
+            <element name="product" type="tns:product"/>
+        </sequence>
+    </complexType>
+
+    <!-- product element definition -->
+    <complexType name="product">
+        <sequence>
+            <element name="name" type="tns:string20char"/>
+            <element name="description" type="tns:string100char"/>
+            <element name="price" type="int"/>
+            <element name="category" type="tns:category"/>
+        </sequence>
+    </complexType>
+
+    <!-- name type definition -->
+    <simpleType name="string20char">
+        <restriction base="string">
+            <maxLength value="20"/>
+        </restriction>
+    </simpleType>
+
+    <!-- description type definition -->
+    <simpleType name="string100char">
+        <restriction base="string">
+            <maxLength value="100"/>
+        </restriction>
+    </simpleType>
+
+    <!-- category type definition -->
+    <simpleType name="category">
+        <restriction base="string">
+            <enumeration value="electronics"/>
+            <enumeration value="books"/>
+            <enumeration value="shoes"/>
+        </restriction>
+    </simpleType>
+
+</schema>
