@@ -1,0 +1,1 @@
+Create an XML file with the "order" root element. It will have 1 "product" child element which in turn will have the following children elements: - name(string, maxlength 20 characters) - description(string, maxlength 100 characters) - price(int) - category(string, enumeration - electronics/books/shoes)
