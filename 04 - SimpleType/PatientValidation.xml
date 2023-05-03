@@ -6,6 +6,7 @@
   <tns:name>John</tns:name>
   <tns:age>18</tns:age>
   <tns:email>johndoe@gmail.com</tns:email>
+  <!-- <tns:gender>T</tns:gender> will cause an error as only "M" and "F" are valid options-->
   <tns:gender>M</tns:gender>
   <tns:phone>866-789-8292</tns:phone>
 
