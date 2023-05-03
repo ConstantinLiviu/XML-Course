@@ -14,14 +14,23 @@
             <element name="name" type="tns:string15char"/>
             <element name="age" type="int"/>
             <element name="email" type="string"/>
-            <element name="gender" type="string"/>
+            <element name="gender" type="tns:gender"/>
             <element name="phone" type="string"/>
         </sequence>
     </complexType>
 
+    <!-- restricts the length of this particular element's text to max 15 characters -->
     <simpleType name="string15char">
         <restriction base="string">
             <maxLength value="15"/>
+        </restriction>
+    </simpleType>
+
+    <!-- helps defined allowed text options for this particular element -->
+    <simpleType name="gender">
+        <restriction base="string">
+            <enumeration value="M"/>
+            <enumeration value="F"/>
         </restriction>
     </simpleType>
 </schema>
