@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:patient xmlns:tns="http://www.learningSession.com/Patient" 
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+			xsi:schemaLocation="http://www.learningSession.com/Patient Patient.xsd">
+  <!-- <tns:name>Johnaover15characters</tns:name> will cause an error as the string is over 15 characters long -->
+  <tns:name>John</tns:name>
+  <tns:age>18</tns:age>
+  <tns:email>johndoe@gmail.com</tns:email>
+  <!-- <tns:gender>T</tns:gender> will cause an error as only "M" and "F" are valid options-->
+  <tns:gender>M</tns:gender>
+  <tns:phone>866-789-8292</tns:phone>
+
+  
+</tns:patient>
