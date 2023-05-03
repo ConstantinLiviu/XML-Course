@@ -1,1 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+        targetNamespace="http://www.learningSession.com/Patient" 
+        xmlns:tns="http://www.learningSession.com/Patient" 
+        elementFormDefault="qualified">
+
+    <!-- This element becomes the root element in the XML file-->
+    <element name="patient" type="tns:patient"/>
+    <!-- use type on element to mark which complex type structure is called -->
+
+    <complexType name="patient">
+    <!-- Always use a sequence/choice/all inside a complexType -->
+        <sequence>
+            <element name="name" type="string"></element>
+            <element name="age" type="int"></element>
+            <element name="email" type="string"></element>
+            <element name="gender" type="string"></element>
+            <element name="phone" type="string"></element>
+        </sequence>
+    </complexType>
+</schema>
