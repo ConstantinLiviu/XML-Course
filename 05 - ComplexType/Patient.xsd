@@ -16,7 +16,15 @@
             <element name="email" type="string"/>
             <element name="gender" type="tns:gender"/>
             <element name="phone" type="string"/>
+            <element name="paymentType" type="tns:paymentType"/>
         </sequence>
+    </complexType>
+
+    <complexType name="paymentType">
+        <choice>
+            <element name="cash" type="decimal"/>
+            <element name="insurance"/>
+        </choice>
     </complexType>
 
     <!-- restricts the length of this particular element's text to max 15 characters -->
